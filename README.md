@@ -60,8 +60,8 @@ Time spent: `<20>`
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. How to scroll horizontality with menu 
-2. Creating segue programmatically 
+1. How to scroll horizontality with menu (User can page between the screens)
+2. Creating segue programmatically (ie: signed in screen)
 
 ### Video Walkthrough 
 
