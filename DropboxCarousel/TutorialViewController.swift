@@ -8,21 +8,34 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet var imageView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: 1500, height: 667)
+        scrollView.delegate = self
+        
+        scrollView.isPagingEnabled = true
+        scrollView.showsHorizontalScrollIndicator  = false
+        
+        
+        }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView!) {
+        pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.width)
+
+        }
+
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
+        /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -32,4 +45,4 @@ class TutorialViewController: UIViewController {
     }
     */
 
-}
+
