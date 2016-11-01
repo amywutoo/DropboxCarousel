@@ -18,7 +18,7 @@ Time spent: `<20>`
      - [x] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
      - [x] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
 1. Tutorial Screens
-  - [ ] User can page between the screens.
+  - [X] User can page between the screens.
 1. Image Timeline
   - [ ] Display a scrollable view of images.
   - [ ] User can tap on the conversations button to see the conversations screen (push).
