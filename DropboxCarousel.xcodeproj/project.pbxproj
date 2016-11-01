@@ -16,6 +16,9 @@
 		D99E02171DBBFC7500DE20A5 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E02161DBBFC7500DE20A5 /* IntroViewController.swift */; };
 		D99E02191DBC03A400DE20A5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E02181DBC03A400DE20A5 /* LogInViewController.swift */; };
 		D99E021B1DBF084400DE20A5 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E021A1DBF084400DE20A5 /* TutorialViewController.swift */; };
+		D9DB63131DC82A7800AF0629 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB63121DC82A7800AF0629 /* settingsViewController.swift */; };
+		D9DB63151DC82A8B00AF0629 /* timelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB63141DC82A8B00AF0629 /* timelineViewController.swift */; };
+		D9DB63171DC82A9D00AF0629 /* conversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB63161DC82A9D00AF0629 /* conversationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D99E02161DBBFC7500DE20A5 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		D99E02181DBC03A400DE20A5 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D99E021A1DBF084400DE20A5 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		D9DB63121DC82A7800AF0629 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		D9DB63141DC82A8B00AF0629 /* timelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timelineViewController.swift; sourceTree = "<group>"; };
+		D9DB63161DC82A9D00AF0629 /* conversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +72,25 @@
 				D99E02141DBBD8AB00DE20A5 /* Common.swift */,
 				D99E02041DBBD78D00DE20A5 /* ViewController.swift */,
 				D99E02061DBBD78D00DE20A5 /* Main.storyboard */,
-				D99E021A1DBF084400DE20A5 /* TutorialViewController.swift */,
-				D99E02181DBC03A400DE20A5 /* LogInViewController.swift */,
-				D99E02161DBBFC7500DE20A5 /* IntroViewController.swift */,
+				D9DB63181DC82AA400AF0629 /* View Controllers */,
 				D99E02091DBBD78D00DE20A5 /* Assets.xcassets */,
 				D99E020B1DBBD78D00DE20A5 /* LaunchScreen.storyboard */,
 				D99E020E1DBBD78D00DE20A5 /* Info.plist */,
 			);
 			path = DropboxCarousel;
+			sourceTree = "<group>";
+		};
+		D9DB63181DC82AA400AF0629 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9DB63161DC82A9D00AF0629 /* conversationsViewController.swift */,
+				D9DB63141DC82A8B00AF0629 /* timelineViewController.swift */,
+				D9DB63121DC82A7800AF0629 /* settingsViewController.swift */,
+				D99E021A1DBF084400DE20A5 /* TutorialViewController.swift */,
+				D99E02181DBC03A400DE20A5 /* LogInViewController.swift */,
+				D99E02161DBBFC7500DE20A5 /* IntroViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +165,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DB63171DC82A9D00AF0629 /* conversationsViewController.swift in Sources */,
 				D99E02051DBBD78D00DE20A5 /* ViewController.swift in Sources */,
 				D99E02151DBBD8AB00DE20A5 /* Common.swift in Sources */,
 				D99E02031DBBD78D00DE20A5 /* AppDelegate.swift in Sources */,
 				D99E02191DBC03A400DE20A5 /* LogInViewController.swift in Sources */,
 				D99E021B1DBF084400DE20A5 /* TutorialViewController.swift in Sources */,
+				D9DB63151DC82A8B00AF0629 /* timelineViewController.swift in Sources */,
 				D99E02171DBBFC7500DE20A5 /* IntroViewController.swift in Sources */,
+				D9DB63131DC82A7800AF0629 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +335,7 @@
 				D99E02131DBBD78D00DE20A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

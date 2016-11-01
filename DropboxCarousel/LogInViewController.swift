@@ -52,10 +52,21 @@ class LogInViewController: UIViewController, UIScrollViewDelegate {
             
         } else if email.text == "amy@mileiq.com" && password.text == "password" {
             
+            let altercontroller = UIAlertController(
+                title: "Signing in...",
+                message: "",
+                preferredStyle: .alert
+            )
+            
+            self.present(altercontroller, animated:true, completion:nil)
+            
+            
             //Success!
             delay(2, closure: {
                 self.loginButton.isSelected = false
                 self.loginIndicator.stopAnimating()
+                
+                altercontroller.dismiss(animated: true, completion: nil)
                 
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let tutorialVC = mainStoryboard.instantiateViewController(withIdentifier: "tutorialVC") as! TutorialViewController
@@ -66,7 +77,11 @@ class LogInViewController: UIViewController, UIScrollViewDelegate {
         } else {
             delay(2, closure: { () -> () in
                 self.loginIndicator.stopAnimating()
-                let alertController = UIAlertController(title: "Invalid email/password", message: "Please try again", preferredStyle: .alert)
+                let alertController = UIAlertController(
+                    title: "Invalid email/password",
+                    message: "Please try again",
+                    preferredStyle: .alert
+                )
     
                 let cancelAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
     
